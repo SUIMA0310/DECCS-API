@@ -198,12 +198,6 @@ public enum EventStatus
 
 public class Event
 {
-    public static Event CreateDraft(EventId id, IEnumerable<User>? participant = null)
-    {
-    }
-
-    protected Event(EventId id, string title, MarkdownText description, EventStatus status, DateOfEvent? date, EventLocation location, IEnumerable<User> )
-
     public EventId Id { get; }
     public string Title { get; private set; } = string.Empty;
     public MarkdownText Description { get; private set; } = new(string.Empty);
